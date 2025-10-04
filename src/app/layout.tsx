@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/providers";
-// import { DottedSurface } from "@/components/ui/dotted-surface";
+import { DottedSurface } from "@/components/ui/dotted-surface";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 
@@ -37,7 +37,7 @@ export default function RootLayout({
         )}
       >
         <Providers>
-          {/* <DottedSurface /> */}
+          <DottedSurface />
           {children}
           <ThemeToggle />
         </Providers>
