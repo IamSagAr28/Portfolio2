@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Mail, Github, Linkedin, MapPin, Phone, Briefcase, GraduationCap, Award, Code, ExternalLink } from "lucide-react";
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
