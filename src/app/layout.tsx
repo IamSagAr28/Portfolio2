@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/providers";
-import { DottedSurface } from "@/components/ui/dotted-surface";
+import { Providers } from "@/components/providers";
+// import { DottedSurface } from "@/components/ui/dotted-surface";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 
@@ -36,11 +36,11 @@ export default function RootLayout({
           "min-h-screen bg-background text-foreground"
         )}
       >
-        <ThemeProvider>
-          <DottedSurface className="size-full" />
+        <Providers>
+          {/* <DottedSurface /> */}
+          {children}
           <ThemeToggle />
-          <main className="relative z-10">{children}</main>
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );
